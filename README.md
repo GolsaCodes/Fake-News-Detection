@@ -2,6 +2,15 @@
 
 A machine learning project for detecting whether a news article is **fake or real** using **Logistic Regression** and text-based features.
 
+## Repository Structure
+
+```text
+Fake-News-Detection/
+├── logistic_regression.ipynb
+├── news_dataset.csv
+└── README.md
+```
+
 ## Project Overview
 
 The goal of this project is to build a binary text classification model that identifies fake news articles based on their textual content.
@@ -43,15 +52,34 @@ A **Logistic Regression** classifier was trained to distinguish between fake and
 
 ### 4. Evaluation
 
-The model was evaluated using:
+The Logistic Regression model was evaluated on the test set using the following metrics:
 
-* Accuracy
-* Precision
-* Recall
-* F1
-* Confusion Matrix
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
 
-##  Results
+#### Results
 
-The Logistic Regression model achieved an **accuracy of 97%** on the test set.
-The confusion matrix, precision, and recall were also used to analyze the model's classification performance.
+The Logistic Regression model achieved an **accuracy of 97.25%** on the test set, demonstrating strong classification performance.
+
+**Classification Report:**
+
+| Class | Precision | Recall | F1-score | Support |
+|:---:|:---:|:---:|:---:|:---:|
+| 0 | 0.98 | 0.96 | 0.97 | 614 |
+| 1 | 0.96 | 0.98 | 0.97 | 586 |
+| **Macro Avg** | **0.97** | **0.97** | **0.97** | **1200** |
+| **Weighted Avg** | **0.97** | **0.97** | **0.97** | **1200** |
+
+**Overall Accuracy:** 0.9725 (97.25%)
+
+#### Confusion Matrix
+
+| | Predicted 0 | Predicted 1 |
+|:---:|:---:|:---:|
+| **Actual 0** | 591 (TN) | 23 (FP) |
+| **Actual 1** | 10 (FN) | 576 (TP) |
+
+Overall, the results indicate that the Logistic Regression model achieves high accuracy and balanced performance across both classes.
