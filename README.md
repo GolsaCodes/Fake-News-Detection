@@ -61,9 +61,6 @@ The Logistic Regression model was evaluated on the test set using the following 
 - Confusion Matrix
 
 #### Results
-
-The Logistic Regression model achieved an **accuracy of 97.25%** on the test set, demonstrating strong classification performance.
-
 **Classification Report:**
 
 | Class | Precision | Recall | F1-score | Support |
@@ -73,7 +70,7 @@ The Logistic Regression model achieved an **accuracy of 97.25%** on the test set
 | **Macro Avg** | **0.97** | **0.97** | **0.97** | **1200** |
 | **Weighted Avg** | **0.97** | **0.97** | **0.97** | **1200** |
 
-**Overall Accuracy:** 0.9725 (97.25%)
+**Overall Accuracy:** 0.9725
 
 #### Confusion Matrix
 
